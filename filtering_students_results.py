@@ -35,11 +35,11 @@ for student_name, result in filetered_students.items():
     if not result:
          final_results[student_name] = {
               "average": None,
-              "grade": "No Data Avaliable"
+              "grade": "No Data Avaliable",
+              "status": "fail"
          }
     else:
          average = sum(result) / len(result)
-         
          final_results[student_name] = {
               "average": round(average),
               "grade": conversion(average)

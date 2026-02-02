@@ -1,1 +1,1 @@
-grade
+name, average_score
